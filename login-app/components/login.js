@@ -26,7 +26,7 @@ export default function Login() {
           Email
         </label>
         <input
-          className="in w3-padding-16 mt-2"
+          className="input w3-padding-16 mt-2"
           placeholder="ojotolani3@gmail.com"
           type="email"
           {...register("email", { required: "You must input an email" })}
@@ -34,7 +34,7 @@ export default function Login() {
         <br />
         <label className="font-semibold text-sm">Password</label>
         <input
-          className="in w3-padding-16 mt-2"
+          className="input w3-padding-16 mt-2"
           type="password"
           {...register("password", {
             required: "You must specify a password",
@@ -48,7 +48,7 @@ export default function Login() {
         <br />
         <label className="font-semibold text-sm">Confirm password</label>
         <input
-          className="in w3-padding-16 mt-2"
+          className="input w3-padding-16 mt-2"
           type="password"
           {...register("confirmpassword", {
             validate: (value) =>

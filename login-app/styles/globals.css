@@ -50,7 +50,7 @@ input:focus {
   color: #808080;
 }
 
-.in {
+.input {
   width: 80%;
   height: 40px;
   background-color: #f3f3f3;
@@ -145,7 +145,7 @@ input:focus {
 .w3-large {
   font-size: 18px !important;
 }
-.allow {
+.content {
   padding: 30px 0px;
 }
 .w3-padding-16 {

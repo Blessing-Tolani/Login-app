@@ -19,7 +19,7 @@ export default function App() {
       {/* Login Modal  */}
       <div className={`${modalIsOpen ? "block" : "hidden"} ...rest`}>
         <div className="w3-modal flex justify-center items-center">
-          <div className="w3-modal-content w3-animate-zoom allow">
+          <div className="w3-modal-content w3-animate-zoom content">
             <div className="w3-container us">
               <span className="w3-button w3-display-topright w3-large">
                 <h3 className="close" onClick={toggleModal}>
