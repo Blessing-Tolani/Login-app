@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  background-color: #0f172a;
+}
+.loginbutton {
+  margin: 0 auto;
+  color: #e8eff9;
+  font-size: 15px;
+  padding: 6px 19px;
+  border-top: 1px solid #e8eff9;
+  border-right: 1px solid #e8eff9;
+  border-bottom: 1px solid #e8eff9;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.loginbutton:hover,
+.loginbutton:focus {
+  border-top: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  color: #808080;
+}
+.submitbutton {
+  margin: 0 auto;
+  color: #0f172a;
+  font-size: 15px;
+  padding: 6px 19px;
+  border-top: 1px solid;
+  border-right: 1px solid #0f172a;
+  border-bottom: 1px solid #0f172a;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+label,
+.close {
+  color: #0f172a;
+}
+input:focus {
+  outline: 1px solid #0f172a;
+}
+
+.submitbutton:hover,
+.submitbutton:focus {
+  border-top: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  color: #808080;
+}
+
+.in {
+  width: 80%;
+  height: 40px;
+  background-color: #f3f3f3;
+  border-radius: 0.6em;
+  padding: 20px;
+  font-size: 14px;
+  color: #0f172a;
+  display: block;
+}
+
+.formdiv {
+  width: 90%;
+  margin: 0 auto;
+}
+.w3-modal {
+  z-index: 3;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.w3-modal-content {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 50px 0px;
+  outline: 0;
+  width: 600px;
+}
+.w3-animate-zoom {
+  animation: animatezoom 0.6s;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.w3-container:after,
+.w3-container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.w3-container {
+  padding: 0.01em 16px;
+}
+.w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.w3-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.w3-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+.w3-button:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+.w3-display-topright {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.w3-large {
+  font-size: 18px !important;
+}
+.allow {
+  padding: 30px 0px;
+}
+.w3-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+input:focus {
+  background-color: #e8f0fe;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  #formdiv {
+    width: 100%;
+  }
+  .in {
+    width: 45%;
+    margin: 1.5% 2.5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .in {
+    height: 50px;
+    width: 80%;
+    margin: 4% auto;
+    display: block;
+  }
+  #formdiv {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .in {
+    width: 90%;
+  }
+}
